@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        
+        .header{
+            grid-area:header;
+
+        }
+        nav{
+            grid-area:nav;
+            
+        }
+        .main-area{
+            grid-area:main-area;
+        }
+        
+        .side{
+            grid-area:side;
+        }
+        .adver{
+            grid-area:adver;
+        }
+        .foot{
+            grid-area:foot;
+        }
+
+        .container{
+            display:grid;
+            gap:20px;
+            grid-template-columns:1fr 4fr 1fr;
+            grid-template-areas:
+            "header   header      header     header"
+            " nav    main-area     side     "
+            " nav    main-area     main-area adver"
+            " foot   foot          foot         foot " 
+            
+            ;
+        }
+
+        
+        
+        
+
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1>hikjd</h1>
+        <nav>
+            <ul>
+            <h4>hi</h4>
+            <h2>hie</h2>
+            <h3>hg</h3>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+<section class="main-area"
+> main</section>
+<section class="side">
+    <p>sidebar</p>
+
+</section>
+<section class="adver">
+    <p> advertise</p>
+</section>
+
+    </main>
+    <footer class="foot">
+        <h5>jnhksjxnj</h5>
+    </footer>
+</body>
+</html>

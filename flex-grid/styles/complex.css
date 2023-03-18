@@ -1,0 +1,48 @@
+ img{
+    width:100%;
+    height:100%;
+}
+.row{
+    height:400px;
+    margin-bottom: 5px;
+}
+.second-section{
+    display:flex;
+    gap:5px;
+}
+.second-section > div {
+    flex:1;
+}
+.second-section-3rd-row{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.second-section-3rd-row img{
+    height:195px;
+}
+.third-row{
+    display: flex;
+    gap:5px;
+}
+.third-row-2nd-column{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5px;
+}
+.third-row-2nd-column > div{
+    flex:1;
+
+}
+@media screen  and (max-width:576px)
+    {
+    .second-section, .third-row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
